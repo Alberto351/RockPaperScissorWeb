@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock • Paper • Scissors — Card Game</title>
 
-    <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
 
 </head>
@@ -16,7 +16,7 @@
         <div class="header-container">
             <div class="logo-group">
                 <div class="logo-mark" aria-hidden="true">
-                    <img src="https://api.iconify.design/lucide-gamepad-2.svg?color=white" alt="Game icon" class="logo-icon">
+                    <img src="image/logo.png" alt="Game icon" class="logo-icon">
                 </div>
 
                 <div class="logo-text-group">
@@ -48,7 +48,7 @@
                             <!--Rock-->
                             <button type="button" data-choice="rock" aria-pressed="false" aria-label="Choose Rock" class="choice-card">
                                 <div class="choice-icon-wrapper">
-                                    <img class="choice-icon" src="image\Rock.jpg.png" alt="Rock icon">
+                                    <img class="choice-icon" src="image/Rock.jpg.png" alt="Rock icon">
                                 </div>
                             <div class="choice-label-group">
                                 <span class="choice-label">Rock</span>
@@ -60,7 +60,7 @@
                             <!--Paper-->
                             <button type="button" data-choice="paper" aria-pressed="false" aria-label="Choose Paper" class="choice-card">
                             <div class="choice-icon-wrapper">
-                                <img class="choice-icon" src="image\paper.jpg.png" alt="Paper icon">
+                                <img class="choice-icon" src="image/paper.jpg.png" alt="Paper icon">
                             </div>
                             
                             <div class="choice-label-group">
@@ -73,7 +73,7 @@
                             <!--Scissor-->
                             <button type="button" data-choice="scissors" aria-pressed="false" aria-label="Choose Scissors" class="choice-card">
                             <div class="choice-icon-wrapper">
-                                <img class="choice-icon" src="image\Scissors.jpg.png" alt="Scissors icon">
+                                <img class="choice-icon" src="image/Scissors.jpg.png" alt="Scissors icon">
                             </div>
                             
                             <div class="choice-label-group">
@@ -87,12 +87,12 @@
                         <div class="results-area" aria-live="polite">
                             <div class="selections-group">
                                 <div class="player-selection-box">
-                                    <div id="you-label" class="player-label">You</div>
+                                    <div id="player-label" class="player-label">You</div>
                                     <div class="player-selection-content">
                                         <div class="player-selection-icon-wrap">
-                                            <img id="youIcon" class="player-selection-icon" src="https://api.iconify.design/lucide-help-circle.svg?color=%23788597" alt="Your selection icon">
+                                            <img id="playerIcon" class="player-selection-icon" src="https://api.iconify.design/lucide-help-circle.svg?color=%23788597" alt="Your selection icon">
                                         </div>
-                                        <span id="youChoice" class="player-selection-text">—</span>
+                                        <span id="playerChoice" class="player-selection-text">—</span>
                                      </div>
                                 </div>
 
@@ -129,7 +129,7 @@
             <aside class="sidebar" aria-label="Sidebar">
                 <div class="scoreboard-card" role="region" aria-labelledby="scoreboard-title">
                     <header class="scoreboard-header">
-                        <img class="scoreboard-icon" src="image\Trophy.png" aria-hidden="true">
+                        <img class="scoreboard-icon" src="image/Trophy.png" aria-hidden="true">
                         <h3 id="scoreboard-title" class="scoreboard-title">Scoreboard</h3>
                     </header>
 
@@ -159,18 +159,19 @@
 
                 <div class="how-to-card" aria-labelledby="how-to-title">
                     <div class="how-to-header">
-                        <img class="how-to-icon" src="image\questionmark.jpg.png" aria-hidden="true">
+                        <img class="how-to-icon" src="image/questionmark.jpg.png" aria-hidden="true">
                         <h3 id="how-to-title" class="how-to-title">How to play</h3>
                     </div>
 
                     <ul class="how-to-list">
-                        <li class="how-to-item"><img class="bullet-icon" src="image\number1.png" aria-hidden="true"><span>Rock beats Scissors</span></li>
-                        <li class="how-to-item"><img class="bullet-icon" src="image\number2.jpg.png" aria-hidden="true"><span>Scissor beats Paper</span></li>
-                        <li class="how-to-item"><img class="bullet-icon" src="image\number3.jpg.png" aria-hidden="true"><span>Paper beats Rock</span></li>
+                        <li class="how-to-item"><img class="bullet-icon" src="image/number1.png" aria-hidden="true"><span>Rock beats Scissors</span></li>
+                        <li class="how-to-item"><img class="bullet-icon" src="image/number2.jpg.png" aria-hidden="true"><span>Scissor beats Paper</span></li>
+                        <li class="how-to-item"><img class="bullet-icon" src="image/number3.jpg.png" aria-hidden="true"><span>Paper beats Rock</span></li>
                     </ul>
                 </div>
             </aside>
         </section>
-    </main>    
+    </main>   
+    <script src="js/script.js"></script> 
 </body>
 </html>
