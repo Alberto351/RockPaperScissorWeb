@@ -36,8 +36,8 @@ paper: 'rock',
 scissors: 'paper'
 };
 
-
 const storageKey = 'scoreStorage';
+
 let score = {
 wins: 0,
 ties: 0,
@@ -185,6 +185,5 @@ if (e.key === '3') playRound('scissors');
 if (e.key.toLowerCase() === 'r') clearRound();
 });
 
-document.getElementById('year').textContent = new Date().getFullYear();
 loadScore();
 clearRound();
