@@ -28,7 +28,7 @@ html {
   margin: 0;
   padding: 0;
 
-  /* outline: 1px solid rgba(255, 0, 0, 0.2) !important; */
+  outline: 1px solid rgba(255, 0, 0, 0.2) !important;
 }
 
 .header{
@@ -63,7 +63,7 @@ html {
   width: 2.5rem;
   border-radius: 0.75rem;
   border: 1px solid black;
-  background-image: linear-gradient(to bottom right, #3b82f6, rgb(59 130 246 / 0));
+  background-image: linear-gradient(to bottom right, #e3a6b6, rgb(59 130 246 / 0));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -135,7 +135,7 @@ html {
 
 .main-container {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-columns: 1.3fr 0.7fr;
   gap: 2.5rem;
 }
 
@@ -176,6 +176,43 @@ html {
   font-family: Poppins;
   font-size: var(--text-lg);
   line-height: 2rem;
+}
+
+.header-right{
+  display: inherit;
+  align-items: center;
+}
+
+.reset-round-button{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: var(--text-sm);
+  line-height: 1.25rem;
+  font-weight: 600;
+
+  border: 1px solid rgb(226 232 240);
+  border-radius: 0.5rem;
+  background-color: white;
+
+  transition: border-color 150ms, 
+              background-color 150ms, 
+              transform 150ms;
+}
+
+.reset-round-button:hover {
+  border-color: rgb(203 213 225);           
+  transform: translateY(-1px);              
+}
+
+.reset-round-button:focus-visible {
+  outline: 2px solid rgb(59 130 246 / 0.5); 
+  outline-offset: 2px;
+}
+
+.reset-round-button:focus {
+  outline: none;
 }
 
 .game-card-body {
@@ -271,7 +308,7 @@ html {
   border-top-width: 1px;
   border-color: rgb(226 232 240 / 0.7);
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1.2fr 0.8fr;
 }
 
 .selections-group{
@@ -373,7 +410,7 @@ html {
 }
 
 .outcome-group{
-  padding-left: 1rem;
+  padding-left: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -409,7 +446,7 @@ html {
 }
 
 .outcome-text {
-  font-size: var(--text-md);
+  font-size: var(--text-sm);
   line-height: 1.75rem;
   font-weight: 600;
   color: rgb(15 23 42 / 1);

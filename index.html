@@ -38,8 +38,13 @@
                 <article class="game-card" aria-labelledby="game-heading">
                     <header class="game-card-header">
                         <div class="header-left">
-                            <h2 id="game-heading" class="game-heading">Choose your card</h2>   
+                            <h2 id="game-heading" class="game-heading">Choose your card</h2>
                         </div>
+                        <div class="header-right">
+                            <button id="resetRound" class="reset-round-button" type="button" aria-label="Clear current round">
+                                Clear round
+                            </button>
+                        </div> 
                     </header>
                 
                     <div class="game-card-body">
@@ -110,7 +115,7 @@
                             <div class="outcome-group">
                                 <div class="outcome-box" role="status" aria-live="polite">
                                     <div class="outcome-left">
-                                        <img id="resultIcon" class="outcome-icon" src="https://api.iconify.design/lucide-activity.svg?color=%230f172a" alt="Result icon">
+                                        <img id="resultIcon" class="outcome-icon" src="image/logo.png" alt="Result icon">
                                         <div class="outcome-label">Round Result</div>
                                     </div>
                                     <div id="resultText" class="outcome-text">—</div>
